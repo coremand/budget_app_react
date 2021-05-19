@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import "../../styles/ExpenseForm.css";
 
 
-export default function ExpenseForm({onSaveExpenseData}) {
+export default function ExpenseForm({onSaveExpenseData, editCancel}) {
 
     const [TitleInput, setTitleInput] = useState("");
     const [AmountInput, setAmountInput] = useState("");
@@ -34,7 +34,10 @@ export default function ExpenseForm({onSaveExpenseData}) {
         setDateInput("");
     };
 
+    
+
     return (
+
         <form onSubmit= { submitHandler }>
             <div className="new-expense__controls">
                 <div className="new-expense__control">
@@ -53,6 +56,7 @@ export default function ExpenseForm({onSaveExpenseData}) {
                 </div>
             </div>
             <div className="new-expense__actions">
+                <button type="button" onClick={editCancel}>Cancel</button>
                 <button type="submit">Add Expense</button>
             </div>
         </form>

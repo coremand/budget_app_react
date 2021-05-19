@@ -1,9 +1,1 @@
-.App{
-    background: linear-gradient(to right bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("./images/background.jpg");
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
